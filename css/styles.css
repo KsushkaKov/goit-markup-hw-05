@@ -388,7 +388,8 @@ ul.main-team-list {
   margin-right: 10px;
 }
 
-.list-social-icon:hover {
+.list-social-icon:hover,
+.list-social-icon:focus {
   background-color: var(--acent-color);
   color: var(--white-color);
 }
@@ -581,7 +582,6 @@ address.footer-adress {
   margin-right: 30px;
 }
 
-
 .portfolio-link {
   display: block;
   transition: box-shadow var(--time-duration);
@@ -641,8 +641,8 @@ address.footer-adress {
   transform var(--time-duration);
 }
 
-.section-portfolio .item:hover .portfolio-section,
-.section-portfolio .item:focus .portfolio-section {
+.portfolio-link:hover .portfolio-section,
+.portfolio-link:focus .portfolio-section {
   opacity: 0.9;
   transform: translateY(0);
 }
@@ -711,6 +711,7 @@ transition: background-color var(--time-duration),
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal{
